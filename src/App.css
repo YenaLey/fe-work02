@@ -1,38 +1,55 @@
+div, input, textarea {
+  box-sizing: border-box;
+}
+
+body {
+margin: 0px;
+}
+
 .App {
-  text-align: center;
+  text-align: left;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.left-container {
+  width: 50%;
+  float: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.right-container {
+  width: 50%;
+  float: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.list {
+  background-color: azure;
+  border: 2px solid black;
+  width: 40%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 6px;
+  border-radius: 10px;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.modal {
+  background-color: whitesmoke;
+  text-align: left;
+  border: 2px dashed black;
+  border-radius: 10px;
+  width: 80%;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputbox {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 5px;
+}
+
+.deletebox {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
