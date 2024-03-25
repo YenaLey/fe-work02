@@ -1,6 +1,5 @@
 h3 {
   margin: 10px;
-  text-align: center;
 }
 
 .App {
@@ -12,7 +11,7 @@ h3 {
 }
 
 .left-container {
-  width: 50%;
+  width: auto;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -25,11 +24,10 @@ h3 {
 }
 
 .right-container {
-  width: 50%;
+  width: auto;
   height: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: start;
 
   @media (max-width: 900px) {
     width: 100%;
