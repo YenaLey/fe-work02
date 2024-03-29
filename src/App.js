@@ -35,9 +35,7 @@ function App() {
           }
         </div>
         <div className="right-container">
-          {
-            modal == true ? <Modal 모달제목={모달제목}></Modal> : null
-          }
+          <div>
           <input className="inputbox" onChange={(e) => {
             입력값변경(e.target.value);
           }}>
@@ -58,7 +56,12 @@ function App() {
             }
           }}>저장
           </button>
+          </div>
+          {
+          modal == true ? <Modal 모달제목={모달제목}></Modal> : null
+        }
         </div>
+        
       </div>
     </>
   );
